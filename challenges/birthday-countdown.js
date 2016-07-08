@@ -34,3 +34,19 @@
 */
 
 // YOUR CODE HERE
+
+var dateT = function daysUntilDate(date){
+    return Math.round((Date.now() - Date.parse(date))/86400000);
+}
+
+function birthdayReminder(){
+  this.name = 'Jack';
+  this.birthday = dateT;
+  return console.log(name + '' + birthday);
+}
+
+
+
+/*1- Need to find out how to set value of input to mm/dd/yyyy
+  2- Change a strng into an integer
+  parse.int(12313123)
